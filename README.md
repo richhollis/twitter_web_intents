@@ -10,7 +10,7 @@
 [gemnasium]: https://gemnasium.com/richhollis/twitter_web_intents
 [coveralls]: https://coveralls.io/r/richhollis/twitter_web_intents
 
-Twitter Web Intents provides simple helper methods that return Twitter Web Intent URLs. The paramters that are passed are verified to ensure they are valid.
+Twitter Web Intents provides simple helper methods that return Twitter Web Intent URLs. The parameters that are passed are verified to ensure they are valid.
 
 ## Installation
 
@@ -49,7 +49,7 @@ TwitterWebIntents.get_status_url('warblealerts', 318705541666988034)
 #=> "https://twitter.com/warblealerts/status/318705541666988034"
 ```
 
-### def get_user_url(params)
+### get_user_url(params)
 
 Valid parameters: [:screen_name, :user_id]
 
@@ -74,7 +74,7 @@ TwitterWebIntents.get_favorite_url({:tweet_id => 318705541666988034, :related =>
 #=> "https://twitter.com/intent/favorite?related=warblealerts%2Crichhollis&tweet_id=318705541666988034"
 ```
 
-### def get_tweet_url(params)
+### get_tweet_url(params)
 
 Valid parameters: [:url, :via, :text, :in_reply_to, :hashtags, :related]
 
@@ -83,7 +83,7 @@ TwitterWebIntents.get_tweet_url({:url => 'http://warble.co', :via => 'richhollis
 #=> "https://twitter.com/intent/tweet?hashtags=%23warble&in_reply_to=318705541666988034&related=warblealerts&text=hello+world&url=http%3A%2F%2Fwarble.co&via=richhollis"
 ```
 
-### def get_retweet_url(params)
+### get_retweet_url(params)
 
 Valid parameters: [:tweet_id, :related]
 
@@ -96,6 +96,6 @@ TwitterWebIntents.get_retweet_url({:tweet_id => 318705541666988034, :related => 
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
+3. Commit your changes and ensure test coverage (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
