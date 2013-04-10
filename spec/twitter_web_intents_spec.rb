@@ -2,8 +2,6 @@ require 'spec_helper'
 
 describe TwitterWebIntents do
 
-  include TwitterWebIntents
-
   subject { TwitterWebIntents }
 
   describe "#get_search_url" do

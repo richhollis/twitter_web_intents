@@ -1,4 +1,4 @@
-# TwitterWebIntents Ruby Gem
+# Twitter Web Intents Ruby Gem
 
 [![Gem Version](https://badge.fury.io/rb/twitter_web_intents.png)][gem]
 [![Build Status](https://secure.travis-ci.org/richhollis/twitter_web_intents.png?branch=master)][travis]
@@ -11,6 +11,9 @@
 [coveralls]: https://coveralls.io/r/richhollis/twitter_web_intents
 
 Twitter Web Intents provides simple helper methods that return Twitter Web Intent URLs. The parameters that are passed are verified to ensure they are valid.
+
+You can read more about Twitter Web Intents on Twitter's site:
+https://dev.twitter.com/docs/intents
 
 ## Installation
 
@@ -25,6 +28,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install twitter_web_intents
+
 
 ## Methods
 
@@ -65,7 +69,7 @@ TwitterWebIntents.get_user_url({:user_id => 102})
 #=> https://twitter.com/intent/user/?user_id=102
 ```
 
-### def get_favorite_url(params)
+### get_favorite_url(params)
 
 Valid parameters: [:tweet_id, :related]
 
