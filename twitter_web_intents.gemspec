@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.test_files     = Dir.glob('spec/**/*')
 
-  spec.add_dependency "activesupport", ['>= 3.0', '< 4.1']
+  spec.add_dependency "activesupport", ['>= 3.0']
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
