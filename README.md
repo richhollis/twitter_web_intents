@@ -29,6 +29,8 @@ Or install it yourself as:
 
     $ gem install twitter_web_intents
 
+Note: You must be using Ruby 1.9.3 or later to use this gem due to the ActiveSupport dependency.
+
 
 ## Methods
 
