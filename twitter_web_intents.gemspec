@@ -22,11 +22,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.test_files     = Dir.glob('spec/**/*')
 
-  spec.add_runtime_dependency 'activesupport', '>= 3.0'
+  spec.add_runtime_dependency 'activesupport', '>= 3','<= 4'
 
-  spec.add_development_dependency "bundler", ">= 1.3"
-  spec.add_development_dependency "rake", ">= 10"
-  spec.add_development_dependency "rspec", ">= 3"
+  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "rake", "~> 10"
+  spec.add_development_dependency "rspec", "~> 3"
+  spec.add_development_dependency "appraisal", "~> 1"
   
   spec.add_development_dependency "simplecov", "~> 0" if RUBY_VERSION >= '1.9'
   spec.add_development_dependency "coveralls", "~> 0" 
