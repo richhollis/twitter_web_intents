@@ -13,9 +13,6 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/richhollis/twitter_web_intents"
   spec.license       = "MIT"
 
-  spec.cert_chain  = ['gem-public_cert.pem']
-  spec.signing_key = File.expand_path("~/.gem/gem-private_key.pem") if $0 =~ /gem\z/
-
   spec.files = %w(LICENSE.txt README.md Rakefile twitter_web_intents.gemspec)
   spec.files += Dir.glob("lib/**/*.rb")
   spec.files += Dir.glob("spec/**/*")
@@ -25,12 +22,12 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
   spec.test_files     = Dir.glob('spec/**/*')
 
-  spec.add_runtime_dependency 'activesupport', '> 3.0'
+  spec.add_runtime_dependency 'activesupport', '>= 3.0'
 
-  spec.add_development_dependency "bundler", "~> 1.3"
-  spec.add_development_dependency "rake", "~> 10"
-  spec.add_development_dependency "rspec", "= 3.0.0beta2"
-  spec.add_development_dependency "simplecov", "~> 0" if RUBY_VERSION >= '1.9'
-  spec.add_development_dependency "coveralls", "~> 0"
+  spec.add_development_dependency "bundler", ">= 1.3"
+  spec.add_development_dependency "rake", ">= 10"
+  spec.add_development_dependency "rspec", ">= 3"
   
+  spec.add_development_dependency "simplecov", "~> 0" if RUBY_VERSION >= '1.9'
+  spec.add_development_dependency "coveralls", "~> 0" 
 end
